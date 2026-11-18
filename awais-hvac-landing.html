@@ -1,0 +1,1262 @@
+<!DOCTYPE html>
+<!--
+  Mockup photos: free-to-use stock from Pexels (pexels.com/license). Replace with Awais HVAC's own job photos before launch.
+  8065903 rooftop units / 6471912 manifold gauge / 8297856 ceiling ducts / 37913513 cooling plant / 32032996 ventilation unit
+  32588555 indoor unit service / 3964741 outdoor units on frame / 30210086 rooftop unit / 5711732 chilled pipes and valves
+  11538226 supply duct / 29452977 HVAC unit close-up / 5463582 technician at work / 19689942 Dubai towers / 6471911 technician with gauges
+-->
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Awais HVAC | Commercial AC Maintenance in the UAE</title>
+<meta name="description" content="Planned and emergency air conditioning maintenance for offices, malls, hotels, warehouses and clinics in the UAE. Annual maintenance contracts, 24/7 breakdown line.">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='5' fill='%230F2330'/%3E%3Cg fill='%23F3C33B'%3E%3Cpath d='M16 16C14.7 11 15.6 6.2 19.1 6.4c2.9.2 3 4.1-.4 7.4z'/%3E%3Cpath transform='rotate(120 16 16)' d='M16 16C14.7 11 15.6 6.2 19.1 6.4c2.9.2 3 4.1-.4 7.4z'/%3E%3Cpath transform='rotate(240 16 16)' d='M16 16C14.7 11 15.6 6.2 19.1 6.4c2.9.2 3 4.1-.4 7.4z'/%3E%3C/g%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Archivo:wdth,wght@62..125,100..900&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --steel: #EEF1F0;
+    --sheet: #FFFFFF;
+    --ink: #0F2330;
+    --ink-2: #4A5B66;
+    --line: #C8D1D3;
+    --line-soft: #DCE2E3;
+    --chill: #1463C7;
+    --chill-dark: #0E4E9F;
+    --chill-return: #8DB4DE;
+    --tag: #F3C33B;
+    --tag-ring: #D9A919;
+    --heat: #E4572E;
+    --heat-ink: #A8361A;
+    --heat-tint: #FBE4DB;
+    --ok: #1F7A4D;
+
+    --font: "Archivo", "Helvetica Neue", Arial, sans-serif;
+    --wrap: 1240px;
+    --gutter: clamp(20px, 4vw, 48px);
+  }
+
+  *, *::before, *::after { box-sizing: border-box; }
+  html { scroll-behavior: smooth; scroll-padding-top: 88px; }
+  body {
+    margin: 0;
+    background: var(--steel);
+    color: var(--ink);
+    font-family: var(--font);
+    font-size: 1.0625rem;
+    line-height: 1.6;
+    -webkit-font-smoothing: antialiased;
+    text-rendering: optimizeLegibility;
+  }
+  img, svg { display: block; max-width: 100%; }
+  a { color: inherit; }
+  p { margin: 0 0 1em; }
+  h1, h2, h3 { margin: 0; font-weight: 800; }
+
+  .wrap { max-width: var(--wrap); margin: 0 auto; padding: 0 var(--gutter); }
+
+  :focus-visible { outline: 3px solid var(--chill); outline-offset: 3px; border-radius: 2px; }
+  .skip-link { position: absolute; left: -9999px; top: 8px; background: var(--ink); color: #fff; padding: 10px 16px; z-index: 100; }
+  .skip-link:focus { left: 8px; }
+
+  /* ---------- Buttons ---------- */
+  .btn {
+    display: inline-flex; align-items: center; justify-content: center; gap: 10px;
+    min-height: 52px; padding: 0 24px;
+    border-radius: 4px; border: 2px solid transparent;
+    font: 650 1rem/1 var(--font); font-stretch: 105%;
+    text-decoration: none; cursor: pointer;
+    transition: background-color .15s ease, border-color .15s ease, color .15s ease;
+  }
+  .btn svg { width: 20px; height: 20px; flex: none; }
+  .btn-primary { background: var(--chill); color: #fff; }
+  .btn-primary:hover { background: var(--chill-dark); }
+  .btn-outline { border-color: var(--ink); color: var(--ink); background: transparent; }
+  .btn-outline:hover { background: var(--ink); color: #fff; }
+  .btn-tag { background: var(--tag); color: var(--ink); }
+  .btn-tag:hover { background: #FFD55A; }
+  .btn-light { border-color: rgba(255,255,255,.55); color: #fff; background: transparent; }
+  .btn-light:hover { background: #fff; color: var(--ink); }
+  .btn-sm { min-height: 42px; padding: 0 18px; font-size: .9375rem; }
+
+  /* ---------- Header ---------- */
+  .site-header {
+    position: sticky; top: 0; z-index: 50;
+    background: rgba(238, 241, 240, .92);
+    backdrop-filter: saturate(140%) blur(10px);
+    -webkit-backdrop-filter: saturate(140%) blur(10px);
+    border-bottom: 1px solid var(--line);
+  }
+  .header-inner { display: flex; align-items: center; gap: 32px; min-height: 72px; }
+  .brand { display: flex; align-items: center; gap: 12px; text-decoration: none; flex: none; }
+  .brand-mark { width: 36px; height: 36px; }
+  .brand-text { display: flex; flex-direction: column; line-height: 1.1; }
+  .brand-name { font-weight: 850; font-stretch: 125%; font-size: 1.1875rem; letter-spacing: -.01em; }
+  .brand-sub { font-size: .8125rem; color: var(--ink-2); font-stretch: 92%; }
+  .main-nav { display: flex; gap: 28px; margin-left: auto; }
+  .main-nav a { text-decoration: none; font-weight: 550; font-size: .9688rem; color: var(--ink); padding: 6px 0; border-bottom: 2px solid transparent; }
+  .main-nav a:hover { border-bottom-color: var(--chill); }
+  .header-actions { display: flex; align-items: center; gap: 18px; }
+  .header-phone { font-weight: 650; text-decoration: none; font-variant-numeric: tabular-nums; white-space: nowrap; }
+  .header-phone:hover { color: var(--chill); }
+  .menu-btn {
+    display: none; min-height: 42px; padding: 0 14px; border: 2px solid var(--ink); border-radius: 4px;
+    background: transparent; font: 650 .9375rem var(--font); color: var(--ink); cursor: pointer;
+  }
+
+  /* ---------- Hero ---------- */
+  .hero { padding: clamp(40px, 6vw, 80px) 0 clamp(48px, 6vw, 88px); }
+  .hero-grid {
+    display: grid; grid-template-columns: minmax(0, 1.05fr) minmax(0, .95fr);
+    grid-template-areas: "copy fig" "facts fig"; grid-template-rows: auto auto;
+    column-gap: clamp(32px, 5vw, 72px); row-gap: 0;
+  }
+  .hero-copy { grid-area: copy; align-self: end; }
+  .hero-figure { grid-area: fig; align-self: center; }
+  .hero-facts { grid-area: facts; align-self: start; }
+  .hero h1 {
+    font-size: clamp(2.6rem, 5vw, 4.4rem);
+    font-stretch: 116%;
+    font-weight: 820;
+    line-height: 1.0;
+    letter-spacing: -.025em;
+    margin-bottom: 28px;
+  }
+  .hero h1 span { display: block; }
+  .lede { font-size: clamp(1.125rem, 1.4vw, 1.3125rem); line-height: 1.55; color: var(--ink); max-width: 34em; margin-bottom: 32px; }
+  .cta-row { display: flex; flex-wrap: wrap; gap: 14px; margin-bottom: 40px; }
+  .hero .cta-row { margin-bottom: 40px; }
+  .hero-facts { list-style: none; margin: 0; padding: 22px 0 0; border-top: 1px solid var(--line); display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 20px; }
+  .hero-facts li { font-size: .9375rem; line-height: 1.4; color: var(--ink-2); }
+  .hero-facts strong { display: block; color: var(--ink); font-weight: 700; font-size: 1rem; margin-bottom: 2px; }
+
+  .hero-figure { margin: 0; position: relative; }
+  .drawing {
+    background-color: var(--sheet);
+    background-image:
+      linear-gradient(var(--line-soft) 1px, transparent 1px),
+      linear-gradient(90deg, var(--line-soft) 1px, transparent 1px);
+    background-size: 24px 24px;
+    background-position: -1px -1px;
+    border: 1px solid var(--line);
+    border-radius: 3px;
+    padding: clamp(12px, 2vw, 24px);
+  }
+  .drawing svg { width: 100%; height: auto; }
+  .legend { display: flex; flex-wrap: wrap; gap: 8px 22px; margin-top: 14px; font-size: .875rem; color: var(--ink-2); font-stretch: 94%; }
+  .legend span { display: inline-flex; align-items: center; gap: 8px; }
+  .legend i { display: inline-block; width: 22px; height: 4px; border-radius: 2px; }
+  .legend .dot { width: 10px; height: 10px; border-radius: 50%; }
+
+  /* SVG styling */
+  .bld-wall { stroke: var(--ink); stroke-width: 3; fill: none; }
+  .bld-slab { fill: var(--ink); }
+  .bld-ceiling { stroke: var(--line); stroke-width: 1.5; stroke-dasharray: 4 4; fill: none; }
+  .unit { fill: var(--sheet); stroke: var(--ink); stroke-width: 2; }
+  .coil { stroke: var(--line); stroke-width: 1.5; }
+  .pipe-s { stroke: var(--chill); stroke-width: 3.5; fill: none; stroke-linecap: round; stroke-linejoin: round; }
+  .pipe-r { stroke: var(--chill-return); stroke-width: 3.5; fill: none; stroke-linecap: round; stroke-linejoin: round; }
+  .flow { stroke: #fff; stroke-width: 1.6; fill: none; stroke-dasharray: 3 11; stroke-linecap: round; animation: flow 1.4s linear infinite; }
+  .air { stroke: var(--chill); stroke-width: 1.6; fill: none; opacity: .6; stroke-linecap: round; marker-end: url(#air-head); }
+  .heat-line { stroke: var(--heat); stroke-width: 1.8; fill: none; opacity: .55; stroke-linecap: round; }
+  .lvl { font: 600 12.5px var(--font); fill: var(--ink-2); }
+  .lvl tspan.n { font-weight: 800; fill: var(--ink); }
+  .readout-pill { fill: var(--sheet); stroke: var(--line); stroke-width: 1.5; }
+  .readout-dot { fill: var(--ok); }
+  .readout { font: 700 14px var(--font); fill: var(--ink); font-variant-numeric: tabular-nums; }
+  .leader { stroke: var(--line); stroke-width: 1.5; stroke-dasharray: 2 3; }
+  .out-pill { fill: var(--heat-tint); }
+  .out-text { font: 700 13.5px var(--font); fill: var(--heat-ink); font-variant-numeric: tabular-nums; }
+  .ground { stroke: var(--ink); stroke-width: 2.5; }
+  .roof-label { font: 600 11.5px var(--font); fill: var(--ink-2); }
+  @keyframes flow { to { stroke-dashoffset: -28; } }
+  .readout.tick { animation: tick .6s ease; }
+  @keyframes tick { 0% { fill: var(--chill); } 100% { fill: var(--ink); } }
+
+  /* ---------- Sections ---------- */
+  .section { padding: clamp(64px, 9vw, 120px) 0; }
+  .section-sheet { background: var(--sheet); border-top: 1px solid var(--line); border-bottom: 1px solid var(--line); }
+  .section-head { max-width: 760px; margin-bottom: clamp(32px, 5vw, 56px); }
+  .section-head h2, .split h2, .contact h2 {
+    font-size: clamp(1.9rem, 3.3vw, 2.85rem);
+    font-stretch: 112%;
+    font-weight: 780;
+    line-height: 1.08;
+    letter-spacing: -.02em;
+    margin-bottom: 18px;
+  }
+  .section-head p { font-size: 1.125rem; color: var(--ink-2); max-width: 40em; margin: 0; }
+
+  /* Schedule table */
+  .schedule { width: 100%; border-collapse: collapse; }
+  .schedule th {
+    text-align: left; font-weight: 650; font-size: .875rem; font-stretch: 94%; color: var(--ink-2);
+    padding: 0 20px 14px 0; border-bottom: 2px solid var(--ink);
+  }
+  .schedule td { padding: 22px 20px 22px 0; border-bottom: 1px solid var(--line); vertical-align: top; }
+  .schedule th:last-child, .schedule td:last-child { padding-right: 0; text-align: right; }
+  .schedule td:first-child { width: 37%; }
+  .eq-name { font-weight: 750; font-stretch: 108%; font-size: 1.125rem; line-height: 1.3; display: block; }
+  .eq-note { font-size: .875rem; color: var(--ink-2); }
+  .schedule td:nth-child(2) { color: var(--ink); max-width: 52ch; }
+  .freq {
+    display: inline-block; white-space: nowrap; font-weight: 650; font-size: .875rem;
+    padding: 5px 12px; border-radius: 999px; background: #E3ECF7; color: var(--chill-dark);
+  }
+  .brands { margin-top: 36px; font-size: 1rem; color: var(--ink-2); max-width: 62em; }
+  .brands strong { color: var(--ink); }
+
+  /* Report split */
+  .split { display: grid; grid-template-columns: minmax(0, .9fr) minmax(0, 1.1fr); gap: clamp(32px, 6vw, 88px); align-items: start; }
+  .split-copy p { color: var(--ink-2); font-size: 1.125rem; }
+  .checks { list-style: none; padding: 0; margin: 28px 0 0; }
+  .checks li { position: relative; padding: 14px 0 14px 34px; border-top: 1px solid var(--line); }
+  .checks li:last-child { border-bottom: 1px solid var(--line); }
+  .checks li::before {
+    content: ""; position: absolute; left: 0; top: 18px; width: 20px; height: 20px; border-radius: 50%;
+    background: var(--ok) url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 20 20'%3E%3Cpath d='M5.5 10.5l3 3 6-7' fill='none' stroke='white' stroke-width='2.2' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E") center/20px no-repeat;
+  }
+
+  .report { background: var(--sheet); border: 1px solid var(--line); border-radius: 3px; box-shadow: 0 1px 0 var(--line), 0 18px 40px -24px rgba(15, 35, 48, .35); }
+  .report-top { display: flex; justify-content: space-between; align-items: center; gap: 16px; padding: 18px 24px; background: var(--ink); color: #fff; border-radius: 3px 3px 0 0; }
+  .report-top h3 { font-size: 1.0625rem; font-stretch: 110%; font-weight: 750; }
+  .report-top .ref { font-size: .8125rem; opacity: .75; font-variant-numeric: tabular-nums; display: block; font-weight: 500; }
+  .sample-badge { font-size: .8125rem; font-weight: 700; background: var(--tag); color: var(--ink); padding: 4px 10px; border-radius: 3px; }
+  .report-meta { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); border-bottom: 1px solid var(--line); }
+  .report-meta > div { padding: 14px 24px; }
+  .report-meta > div:nth-child(odd) { border-right: 1px solid var(--line-soft); }
+  .report-meta > div:nth-child(-n+2) { border-bottom: 1px solid var(--line-soft); }
+  .report-meta dt, .report-meta .k { font-size: .75rem; color: var(--ink-2); font-stretch: 94%; }
+  .report-meta .v { font-weight: 650; font-size: .9375rem; line-height: 1.35; }
+  .readings { width: 100%; border-collapse: collapse; font-size: .9375rem; }
+  .readings th { text-align: left; font-weight: 600; font-size: .8125rem; color: var(--ink-2); padding: 12px 24px 8px; font-stretch: 94%; }
+  .readings td { padding: 11px 24px; border-top: 1px solid var(--line-soft); font-variant-numeric: tabular-nums; }
+  .readings td:nth-child(2) { font-weight: 700; white-space: nowrap; }
+  .status { display: inline-flex; align-items: center; gap: 7px; font-weight: 600; font-size: .875rem; white-space: nowrap; }
+  .status::before { content: ""; width: 9px; height: 9px; border-radius: 50%; background: var(--ok); }
+  .status.warn::before { background: var(--tag-ring); }
+  .status.ok { color: var(--ok); }
+  .status.warn { color: #8A6400; }
+  .report-notes { padding: 18px 24px 22px; border-top: 1px solid var(--line); font-size: .9375rem; }
+  .report-notes .k { font-size: .75rem; color: var(--ink-2); display: block; margin-bottom: 4px; }
+  .report-notes p { margin: 0; }
+  .photos { display: grid; grid-template-columns: 1fr 1fr; gap: 12px; padding: 0 24px 24px; }
+
+  /* Contract tags */
+  .plans { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: clamp(20px, 3vw, 36px); align-items: start; }
+  .plan {
+    position: relative; padding-top: 44px;
+    filter: drop-shadow(1px 0 0 var(--line)) drop-shadow(-1px 0 0 var(--line)) drop-shadow(0 1px 0 var(--line)) drop-shadow(0 -1px 0 var(--line)) drop-shadow(0 16px 18px rgba(15, 35, 48, .10));
+  }
+  .plan.featured { filter: drop-shadow(0 16px 18px rgba(15, 35, 48, .14)); }
+  .plan::before { /* string */
+    content: ""; position: absolute; top: 0; left: calc(50% - 1px); width: 2px; height: 70px;
+    background: #8E9CA2; border-radius: 2px; z-index: 2;
+  }
+  .plan-body {
+    position: relative; background: var(--sheet);
+    clip-path: polygon(28px 0, calc(100% - 28px) 0, 100% 28px, 100% 100%, 0 100%, 0 28px);
+    padding: 58px 28px 28px;
+  }
+  .plan-body::before { /* punched hole with reinforcement ring */
+    content: ""; position: absolute; top: 18px; left: calc(50% - 13px); width: 26px; height: 26px; border-radius: 50%;
+    background: var(--sheet); box-shadow: 0 0 0 5px var(--tag-ring), inset 0 1px 3px rgba(15, 35, 48, .25);
+  }
+  .plan.featured .plan-body { background: var(--tag); }
+  .plan.featured .plan-body::before { box-shadow: 0 0 0 5px #C99A10, inset 0 1px 3px rgba(15, 35, 48, .25); }
+  .plan-outline { position: absolute; inset: 0; pointer-events: none; }
+  .plan h3 { font-size: 1.625rem; font-stretch: 118%; font-weight: 820; letter-spacing: -.015em; margin-bottom: 6px; }
+  .plan .fit { font-size: .9375rem; color: var(--ink-2); margin-bottom: 22px; min-height: 3.2em; }
+  .plan.featured .fit { color: #3D3412; }
+  .plan dl { margin: 0 0 26px; }
+  .plan dl div { display: flex; justify-content: space-between; gap: 16px; padding: 10px 0; border-bottom: 1.5px dashed rgba(15,35,48,.28); }
+  .plan dt { font-size: .875rem; color: var(--ink-2); }
+  .plan.featured dt { color: #3D3412; }
+  .plan dd { margin: 0; font-weight: 700; font-size: .9375rem; text-align: right; }
+  .plan .btn { width: 100%; }
+  .plan-note { margin-top: 28px; font-size: .9375rem; color: var(--ink-2); }
+  .most { font-size: .8125rem; font-weight: 700; display: inline-block; margin-bottom: 8px; }
+
+  /* Buildings */
+  .bldg-list { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 0 clamp(32px, 5vw, 72px); margin: 0; padding: 0; list-style: none; }
+  .bldg-list li { display: grid; grid-template-columns: 44px 1fr; gap: 16px; padding: 22px 0; border-top: 1px solid var(--line); }
+  .bldg-list svg { width: 40px; height: 40px; color: var(--chill); }
+  .bldg-list h3 { font-size: 1.125rem; font-stretch: 106%; font-weight: 750; margin-bottom: 2px; }
+  .bldg-list p { margin: 0; color: var(--ink-2); font-size: 1rem; }
+
+  /* Breakdowns (dark) */
+  .night { background: var(--ink); color: #E7ECEE; }
+  .night-grid { display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 1fr); gap: clamp(32px, 6vw, 88px); align-items: start; }
+  .night h2 { font-size: clamp(1.9rem, 3.3vw, 2.85rem); font-stretch: 112%; font-weight: 780; line-height: 1.08; letter-spacing: -.02em; margin-bottom: 18px; color: #fff; }
+  .night p { color: #B9C6CC; font-size: 1.125rem; }
+  .big-phone {
+    display: inline-block; margin: 18px 0 24px; text-decoration: none; color: var(--tag);
+    font-weight: 850; font-stretch: 116%; font-size: clamp(1.75rem, 3.6vw, 2.9rem); letter-spacing: -.02em; line-height: 1; white-space: nowrap;
+    font-variant-numeric: tabular-nums;
+  }
+  .big-phone:hover { text-decoration: underline; text-decoration-thickness: 3px; text-underline-offset: 8px; }
+  .night .cta-row { margin-bottom: 0; }
+  .faults-title { font-size: 1rem; font-weight: 700; color: #fff; margin-bottom: 8px; }
+  .faults { list-style: none; margin: 0; padding: 0; display: grid; grid-template-columns: 1fr 1fr; gap: 0 28px; }
+  .faults li { padding: 14px 0 14px 26px; border-top: 1px solid rgba(255,255,255,.14); position: relative; color: #E7ECEE; }
+  .faults li::before { content: ""; position: absolute; left: 0; top: 23px; width: 12px; height: 3px; background: var(--tag); border-radius: 2px; }
+
+  /* Process */
+  .steps { list-style: none; margin: 0; padding: 0; display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: clamp(20px, 3vw, 40px); counter-reset: step; }
+  .steps li { border-top: 3px solid var(--ink); padding-top: 20px; counter-increment: step; }
+  .steps li::before {
+    content: counter(step); display: block; font-weight: 850; font-stretch: 125%; font-size: 2.5rem; line-height: 1;
+    color: var(--chill); margin-bottom: 16px; font-variant-numeric: tabular-nums;
+  }
+  .steps h3 { font-size: 1.1875rem; font-stretch: 106%; font-weight: 750; margin-bottom: 8px; }
+  .steps p { color: var(--ink-2); font-size: 1rem; margin: 0; }
+
+  /* FAQ */
+  .faq-wrap { display: grid; grid-template-columns: minmax(0, .8fr) minmax(0, 1.2fr); gap: clamp(32px, 6vw, 88px); }
+  .faq details { border-top: 1px solid var(--line); }
+  .faq details:last-child { border-bottom: 1px solid var(--line); }
+  .faq summary {
+    list-style: none; cursor: pointer; padding: 22px 48px 22px 0; position: relative;
+    font-weight: 700; font-size: 1.125rem; font-stretch: 104%;
+  }
+  .faq summary::-webkit-details-marker { display: none; }
+  .faq summary::after {
+    content: ""; position: absolute; right: 4px; top: 50%; width: 14px; height: 14px; margin-top: -7px;
+    background:
+      linear-gradient(var(--ink), var(--ink)) center/14px 2.5px no-repeat,
+      linear-gradient(var(--ink), var(--ink)) center/2.5px 14px no-repeat;
+    transition: transform .2s ease;
+  }
+  .faq details[open] summary::after { transform: rotate(45deg); }
+  .faq summary:hover { color: var(--chill); }
+  .faq .answer { padding: 0 48px 24px 0; color: var(--ink-2); }
+  .faq .answer p:last-child { margin: 0; }
+
+  /* Contact */
+  .contact-grid { display: grid; grid-template-columns: minmax(0, .85fr) minmax(0, 1.15fr); gap: clamp(32px, 6vw, 88px); align-items: start; }
+  .contact-copy > p { color: var(--ink-2); font-size: 1.125rem; }
+  .direct { margin: 32px 0 0; padding: 0; list-style: none; }
+  .direct li { padding: 16px 0; border-top: 1px solid var(--line); display: grid; grid-template-columns: 130px 1fr; gap: 12px; }
+  .direct li:last-child { border-bottom: 1px solid var(--line); }
+  .direct .k { color: var(--ink-2); font-size: .9375rem; }
+  .direct a { font-weight: 700; text-decoration: none; }
+  .direct a:hover { color: var(--chill); text-decoration: underline; }
+
+  .form { background: var(--sheet); border: 1px solid var(--line); border-radius: 3px; padding: clamp(22px, 3.5vw, 40px); }
+  .form-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 18px 20px; }
+  .field { display: flex; flex-direction: column; gap: 7px; }
+  .field.full { grid-column: 1 / -1; }
+  .field label, .field legend { font-weight: 650; font-size: .9375rem; }
+  .field .opt { font-weight: 400; color: var(--ink-2); }
+  .input, .select, .textarea {
+    width: 100%; font: 400 1rem var(--font); color: var(--ink);
+    background: var(--steel); border: 1.5px solid var(--line); border-radius: 4px; padding: 13px 14px;
+    transition: border-color .15s ease, background-color .15s ease;
+  }
+  .input:hover, .select:hover, .textarea:hover { border-color: #9DABB0; }
+  .input:focus, .select:focus, .textarea:focus { outline: none; border-color: var(--chill); background: #fff; box-shadow: 0 0 0 3px rgba(20, 99, 199, .18); }
+  .select {
+    appearance: none; -webkit-appearance: none; padding-right: 40px;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 12 8'%3E%3Cpath d='M1 1.5l5 5 5-5' fill='none' stroke='%230F2330' stroke-width='1.8'/%3E%3C/svg%3E");
+    background-repeat: no-repeat; background-position: right 14px center; background-size: 12px 8px;
+  }
+  .textarea { min-height: 110px; resize: vertical; }
+  fieldset.field { border: 0; padding: 0; margin: 0; min-width: 0; }
+  .choices { display: flex; flex-wrap: wrap; gap: 10px; }
+  .choice { position: relative; }
+  .choice input { position: absolute; opacity: 0; inset: 0; margin: 0; cursor: pointer; }
+  .choice span {
+    display: inline-block; padding: 10px 16px; border: 1.5px solid var(--line); border-radius: 4px;
+    font-weight: 600; font-size: .9375rem; background: var(--steel); cursor: pointer;
+    transition: background-color .15s ease, border-color .15s ease, color .15s ease;
+  }
+  .choice input:checked + span { background: var(--ink); border-color: var(--ink); color: #fff; }
+  .choice input:focus-visible + span { outline: 3px solid var(--chill); outline-offset: 2px; }
+  .form-foot { display: flex; flex-wrap: wrap; align-items: center; gap: 16px 20px; margin-top: 26px; }
+  .form-foot small { color: var(--ink-2); font-size: .875rem; max-width: 30em; }
+  .form-status { margin: 16px 0 0; font-weight: 600; color: var(--ok); min-height: 1.6em; }
+
+  /* Footer */
+  .site-footer { background: var(--ink); color: #B9C6CC; padding: 56px 0 28px; }
+  .footer-grid { display: grid; grid-template-columns: 1.4fr 1fr 1fr; gap: 40px; padding-bottom: 40px; border-bottom: 1px solid rgba(255,255,255,.14); }
+  .site-footer .brand-name { color: #fff; }
+  .site-footer .brand-sub { color: #9FB0B8; }
+  .site-footer h3 { color: #fff; font-size: 1rem; font-weight: 700; margin-bottom: 12px; }
+  .site-footer ul { list-style: none; margin: 0; padding: 0; }
+  .site-footer li { padding: 4px 0; }
+  .site-footer a { text-decoration: none; }
+  .site-footer a:hover { color: #fff; text-decoration: underline; }
+  .footer-about { margin-top: 18px; max-width: 34em; font-size: .9688rem; }
+  .footer-bottom { display: flex; flex-wrap: wrap; justify-content: space-between; gap: 12px; padding-top: 24px; font-size: .875rem; color: #8FA1AA; }
+
+
+  /* ---------- Photos ---------- */
+  .shot, .banner, .night-photo, .photo { margin: 0; background: #D5DBDC; overflow: hidden; }
+  img.is-missing { visibility: hidden; }
+
+  .onsite { padding: 0 0 clamp(56px, 7vw, 96px); }
+  .onsite-grid { display: grid; grid-template-columns: 1.35fr 1fr 1fr; gap: clamp(12px, 1.6vw, 20px); }
+  .shot { position: relative; height: clamp(260px, 30vw, 420px); border-radius: 3px; }
+  .shot img { width: 100%; height: 100%; object-fit: cover; }
+  .shot-lg img { object-position: 50% 70%; }
+  .shot figcaption {
+    position: absolute; left: 12px; bottom: 12px; right: 12px; width: fit-content; max-width: calc(100% - 24px);
+    background: rgba(15, 35, 48, .86); color: #fff; font-size: .875rem; font-weight: 600; line-height: 1.35;
+    padding: 7px 12px; border-radius: 3px;
+  }
+
+  .eq { display: flex; gap: 18px; align-items: flex-start; }
+  .eq-img { width: 112px; height: 84px; object-fit: cover; border-radius: 2px; flex: none; background: #D5DBDC; }
+
+  .photo { position: relative; aspect-ratio: 4 / 3; border-radius: 2px; }
+  .photo img { width: 100%; height: 100%; object-fit: cover; }
+  .photo figcaption {
+    position: absolute; left: 8px; bottom: 8px; background: rgba(255,255,255,.92); color: var(--ink);
+    padding: 3px 9px; border-radius: 2px; font-size: .75rem; font-weight: 650;
+  }
+
+  .banner { aspect-ratio: 21 / 8; border-radius: 3px; margin-bottom: clamp(32px, 4vw, 48px); }
+  .banner img { width: 100%; height: 100%; object-fit: cover; object-position: 50% 40%; }
+
+  .night-photo { aspect-ratio: 16 / 10; border-radius: 3px; margin-bottom: 28px; background: #22394A; }
+  .night-photo img { width: 100%; height: 100%; object-fit: cover; }
+
+  /* Mobile call bar */
+  .call-bar { display: none; }
+
+  /* ---------- Responsive ---------- */
+  @media (max-width: 1120px) {
+    .main-nav { gap: 20px; }
+    .header-phone { display: none; }
+  }
+  @media (max-width: 960px) {
+    .hero-grid, .split, .night-grid, .faq-wrap, .contact-grid { grid-template-columns: 1fr; }
+    .hero-grid { grid-template-areas: "copy" "fig" "facts"; row-gap: 0; }
+    .hero-figure { margin-bottom: 36px; }
+    .onsite-grid { grid-template-columns: 1fr 1fr; }
+    .shot-lg { grid-column: 1 / -1; }
+    .shot { height: clamp(220px, 44vw, 380px); }
+    .hero-figure { max-width: 620px; }
+    .plans { grid-template-columns: 1fr; max-width: 520px; }
+    .steps { grid-template-columns: 1fr 1fr; row-gap: 40px; }
+    .menu-btn { display: inline-flex; align-items: center; }
+    .main-nav {
+      display: none; position: absolute; top: 100%; left: 0; right: 0; margin: 0;
+      flex-direction: column; gap: 0; background: var(--steel); border-bottom: 1px solid var(--line); padding: 8px var(--gutter) 16px;
+    }
+    .main-nav.open { display: flex; }
+    .main-nav a { padding: 14px 0; border-bottom: 1px solid var(--line-soft); }
+    .header-actions { margin-left: auto; }
+    .footer-grid { grid-template-columns: 1fr 1fr; }
+    .footer-grid > :first-child { grid-column: 1 / -1; }
+  }
+  @media (max-width: 720px) {
+    body { padding-bottom: 68px; }
+    .header-actions .btn { display: none; }
+    .hero-facts { grid-template-columns: 1fr; gap: 14px; }
+    .schedule thead { display: none; }
+    .schedule, .schedule tbody, .schedule tr, .schedule td { display: block; width: 100%; }
+    .schedule tr { padding: 20px 0; border-bottom: 1px solid var(--line); }
+    .schedule tr:first-child { border-top: 2px solid var(--ink); }
+    .schedule td { border: 0; padding: 0; }
+    .schedule td:first-child { width: 100%; margin-bottom: 8px; }
+    .schedule td:last-child { text-align: left; margin-top: 12px; }
+    .shot figcaption { font-size: .8125rem; padding: 6px 10px; left: 8px; bottom: 8px; }
+    .eq { gap: 14px; }
+    .eq-img { width: 94px; height: 72px; }
+    .banner { aspect-ratio: 4 / 3; }
+    .report-meta > div { padding: 12px 16px; }
+    .report-top, .report-notes { padding-left: 16px; padding-right: 16px; }
+    .photos { padding: 0 16px 16px; }
+    .readings { font-size: .875rem; }
+    .status { white-space: normal; align-items: flex-start; }
+    .status::before { margin-top: 6px; flex: none; }
+    .readings th, .readings td { padding-left: 16px; padding-right: 16px; }
+    .readings th:nth-child(3), .readings td:nth-child(3) { padding-left: 0; }
+    .bldg-list { grid-template-columns: 1fr; }
+    .faults { grid-template-columns: 1fr; }
+    .steps { grid-template-columns: 1fr; }
+    .form-grid { grid-template-columns: 1fr; }
+    .direct li { grid-template-columns: 1fr; gap: 2px; }
+    .footer-grid { grid-template-columns: 1fr; }
+    .call-bar {
+      display: grid; grid-template-columns: 1fr 1fr; gap: 10px;
+      position: fixed; left: 0; right: 0; bottom: 0; z-index: 60;
+      padding: 10px 14px calc(10px + env(safe-area-inset-bottom));
+      background: var(--ink); border-top: 1px solid rgba(255,255,255,.12);
+    }
+    .call-bar .btn { min-height: 48px; padding: 0 12px; }
+  }
+  @media (max-width: 420px) {
+    .brand-sub { display: none; }
+    .report-top { flex-direction: column; align-items: flex-start; }
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    html { scroll-behavior: auto; }
+    .flow { animation: none; stroke-dasharray: none; stroke: none; }
+    .readout.tick { animation: none; }
+    *, *::before, *::after { transition: none !important; }
+  }
+</style>
+</head>
+<body>
+<a class="skip-link" href="#main">Skip to content</a>
+
+<header class="site-header">
+  <div class="wrap header-inner">
+    <a href="#top" class="brand" aria-label="Awais HVAC, back to top">
+      <svg class="brand-mark" viewBox="0 0 36 36" aria-hidden="true">
+        <rect width="36" height="36" rx="5" fill="#0F2330"/>
+        <path d="M18 18C16.5 12.5 17.5 7 21.5 7.2c3.3.2 3.4 4.6-.4 8.3L18 18Z" fill="#F3C33B" transform="rotate(0 18 18)"/><path d="M18 18C16.5 12.5 17.5 7 21.5 7.2c3.3.2 3.4 4.6-.4 8.3L18 18Z" fill="#F3C33B" transform="rotate(120 18 18)"/><path d="M18 18C16.5 12.5 17.5 7 21.5 7.2c3.3.2 3.4 4.6-.4 8.3L18 18Z" fill="#F3C33B" transform="rotate(240 18 18)"/><circle cx="18" cy="18" r="2.6" fill="#0F2330" stroke="#F3C33B" stroke-width="1.6"/>
+      </svg>
+      <span class="brand-text">
+        <span class="brand-name">Awais HVAC</span>
+        <span class="brand-sub">Commercial AC maintenance</span>
+      </span>
+    </a>
+    <nav class="main-nav" id="main-nav" aria-label="Main">
+      <a href="#services">Services</a>
+      <a href="#contracts">Contracts</a>
+      <a href="#buildings">Buildings</a>
+      <a href="#breakdowns">Breakdowns</a>
+      <a href="#faq">FAQ</a>
+    </nav>
+    <div class="header-actions">
+      <a class="header-phone" href="tel:+971547720298">+971 54 772 0298</a>
+      <a class="btn btn-primary btn-sm" href="#contact">Book a site survey</a>
+      <button class="menu-btn" type="button" aria-expanded="false" aria-controls="main-nav">Menu</button>
+    </div>
+  </div>
+</header>
+
+<main id="main">
+
+  <!-- ============ HERO ============ -->
+  <section class="hero" id="top">
+    <div class="wrap hero-grid">
+      <div class="hero-copy">
+        <h1><span>48°C outside.</span><span>22°C inside.</span></h1>
+        <p class="lede">Awais HVAC maintains the air conditioning in offices, malls, hotels, warehouses and clinics across the UAE. Planned visits keep every unit running, and our 24/7 line covers the days something breaks.</p>
+        <div class="cta-row">
+          <a class="btn btn-primary" href="#contact">Book a free site survey</a>
+          <a class="btn btn-outline" href="https://wa.me/971547720298?text=Hello%20Awais%20HVAC%2C%20I%20need%20help%20with%20AC%20maintenance%20for%20a%20commercial%20building." target="_blank" rel="noopener">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2Zm0 18.2a8.2 8.2 0 0 1-4.2-1.1l-.3-.2-3 .8.8-2.9-.2-.3A8.2 8.2 0 1 1 12 20.2Zm4.5-6.1c-.2-.1-1.5-.7-1.7-.8-.2-.1-.4-.1-.6.1l-.8 1c-.1.2-.3.2-.5.1a6.7 6.7 0 0 1-3.3-2.9c-.3-.4.2-.4.7-1.3.1-.2 0-.3 0-.4l-.8-1.8c-.2-.5-.4-.4-.6-.4h-.5a1 1 0 0 0-.7.3 3 3 0 0 0-.9 2.2 5.2 5.2 0 0 0 1.1 2.7 11.8 11.8 0 0 0 4.5 4c1.7.7 2.3.8 3.2.6a2.7 2.7 0 0 0 1.7-1.2 2.2 2.2 0 0 0 .2-1.2c-.1-.1-.3-.2-.5-.3Z"/></svg>
+            WhatsApp us
+          </a>
+        </div>
+      </div>
+      <ul class="hero-facts">
+        <li><strong>Commercial only</strong>Offices, retail, hospitality, healthcare and industrial sites</li>
+        <li><strong>Every system</strong>Chillers, AHUs, FCUs, VRF, package and ducted units</li>
+        <li><strong>A report every visit</strong>Readings, photos and next steps, per unit</li>
+      </ul>
+
+      <figure class="hero-figure">
+        <div class="drawing">
+          <svg viewBox="0 0 600 630" role="img" aria-labelledby="bld-title bld-desc">
+            <title id="bld-title">Section of a commercial building cooled by Awais HVAC</title>
+            <desc id="bld-desc">A rooftop chiller sends chilled water down two risers to a fan coil unit on each of six floors: retail, food court, clinic and three office floors. Outside it is 48 degrees; every floor reads about 22 degrees.</desc>
+
+            <!-- Sun and outside temperature -->
+            <circle cx="78" cy="62" r="34" fill="#E4572E" opacity=".14"/>
+            <circle cx="78" cy="62" r="21" fill="#E4572E"/>
+            <rect class="out-pill" x="22" y="108" width="122" height="30" rx="15"/>
+            <text class="out-text" x="83" y="128" text-anchor="middle">Outside 48°C</text>
+
+            <!-- Heat rejected by chiller -->
+            <path class="heat-line" d="M233 100 q-5 -7 0 -14 q5 -7 0 -14 q-5 -7 0 -14"/>
+            <path class="heat-line" d="M283 100 q-5 -7 0 -14 q5 -7 0 -14 q-5 -7 0 -14"/>
+            <path class="heat-line" d="M333 100 q-5 -7 0 -14 q5 -7 0 -14 q-5 -7 0 -14"/>
+
+            <!-- Rooftop chiller -->
+            <rect class="unit" x="212" y="104" width="42" height="12" rx="1.5"/>
+            <rect class="unit" x="262" y="104" width="42" height="12" rx="1.5"/>
+            <rect class="unit" x="312" y="104" width="42" height="12" rx="1.5"/>
+            <rect class="unit" x="200" y="116" width="170" height="58" rx="2"/>
+            <g class="coil">
+              <line x1="212" y1="126" x2="212" y2="164"/><line x1="222" y1="126" x2="222" y2="164"/><line x1="232" y1="126" x2="232" y2="164"/><line x1="242" y1="126" x2="242" y2="164"/><line x1="252" y1="126" x2="252" y2="164"/><line x1="262" y1="126" x2="262" y2="164"/><line x1="272" y1="126" x2="272" y2="164"/><line x1="282" y1="126" x2="282" y2="164"/><line x1="292" y1="126" x2="292" y2="164"/><line x1="302" y1="126" x2="302" y2="164"/><line x1="312" y1="126" x2="312" y2="164"/><line x1="322" y1="126" x2="322" y2="164"/><line x1="332" y1="126" x2="332" y2="164"/><line x1="342" y1="126" x2="342" y2="164"/><line x1="352" y1="126" x2="352" y2="164"/>
+            </g>
+
+            <!-- Building shell -->
+            <rect class="bld-slab" x="152" y="172" width="316" height="8"/>
+            <line class="bld-wall" x1="160" y1="180" x2="160" y2="600"/>
+            <line class="bld-wall" x1="460" y1="180" x2="460" y2="600"/>
+            <rect class="bld-slab" x="160" y="247" width="300" height="6"/>
+            <rect class="bld-slab" x="160" y="317" width="300" height="6"/>
+            <rect class="bld-slab" x="160" y="387" width="300" height="6"/>
+            <rect class="bld-slab" x="160" y="457" width="300" height="6"/>
+            <rect class="bld-slab" x="160" y="527" width="300" height="6"/>
+
+            <!-- Floors (each: ceiling line, FCU, diffuser, cool air, branch pipes) -->
+            <g transform="translate(160,180)">
+              <path class="bld-ceiling" d="M2 22 H298"/>
+              <path class="pipe-s" d="M260 8 H126"/><path class="flow" d="M260 8 H126"/>
+              <path class="pipe-r" d="M126 14 H272"/><path class="flow" d="M126 14 H272"/>
+              <rect class="unit" x="70" y="4" width="56" height="14" rx="1.5"/>
+              <rect x="86" y="20" width="24" height="3" fill="#0F2330"/>
+              <path class="air" d="M91 28 l-6 11"/><path class="air" d="M98 28 v13"/><path class="air" d="M105 28 l6 11"/>
+            </g>
+            <g transform="translate(160,250)">
+              <path class="bld-ceiling" d="M2 22 H298"/>
+              <path class="pipe-s" d="M260 8 H126"/><path class="flow" d="M260 8 H126"/>
+              <path class="pipe-r" d="M126 14 H272"/><path class="flow" d="M126 14 H272"/>
+              <rect class="unit" x="70" y="4" width="56" height="14" rx="1.5"/>
+              <rect x="86" y="20" width="24" height="3" fill="#0F2330"/>
+              <path class="air" d="M91 28 l-6 11"/><path class="air" d="M98 28 v13"/><path class="air" d="M105 28 l6 11"/>
+            </g>
+            <g transform="translate(160,320)">
+              <path class="bld-ceiling" d="M2 22 H298"/>
+              <path class="pipe-s" d="M260 8 H126"/><path class="flow" d="M260 8 H126"/>
+              <path class="pipe-r" d="M126 14 H272"/><path class="flow" d="M126 14 H272"/>
+              <rect class="unit" x="70" y="4" width="56" height="14" rx="1.5"/>
+              <rect x="86" y="20" width="24" height="3" fill="#0F2330"/>
+              <path class="air" d="M91 28 l-6 11"/><path class="air" d="M98 28 v13"/><path class="air" d="M105 28 l6 11"/>
+            </g>
+            <g transform="translate(160,390)">
+              <path class="bld-ceiling" d="M2 22 H298"/>
+              <path class="pipe-s" d="M260 8 H126"/><path class="flow" d="M260 8 H126"/>
+              <path class="pipe-r" d="M126 14 H272"/><path class="flow" d="M126 14 H272"/>
+              <rect class="unit" x="70" y="4" width="56" height="14" rx="1.5"/>
+              <rect x="86" y="20" width="24" height="3" fill="#0F2330"/>
+              <path class="air" d="M91 28 l-6 11"/><path class="air" d="M98 28 v13"/><path class="air" d="M105 28 l6 11"/>
+            </g>
+            <g transform="translate(160,460)">
+              <path class="bld-ceiling" d="M2 22 H298"/>
+              <path class="pipe-s" d="M260 8 H126"/><path class="flow" d="M260 8 H126"/>
+              <path class="pipe-r" d="M126 14 H272"/><path class="flow" d="M126 14 H272"/>
+              <rect class="unit" x="70" y="4" width="56" height="14" rx="1.5"/>
+              <rect x="86" y="20" width="24" height="3" fill="#0F2330"/>
+              <path class="air" d="M91 28 l-6 11"/><path class="air" d="M98 28 v13"/><path class="air" d="M105 28 l6 11"/>
+            </g>
+            <g transform="translate(160,530)">
+              <path class="bld-ceiling" d="M2 22 H298"/>
+              <path class="pipe-s" d="M260 8 H126"/><path class="flow" d="M260 8 H126"/>
+              <path class="pipe-r" d="M126 14 H272"/><path class="flow" d="M126 14 H272"/>
+              <rect class="unit" x="70" y="4" width="56" height="14" rx="1.5"/>
+              <rect x="86" y="20" width="24" height="3" fill="#0F2330"/>
+              <path class="air" d="M91 28 l-6 11"/><path class="air" d="M98 28 v13"/><path class="air" d="M105 28 l6 11"/>
+            </g>
+
+            <!-- Risers from chiller -->
+            <path class="pipe-s" d="M370 150 H420 V538"/><path class="flow" d="M370 150 H420 V538"/>
+            <path class="pipe-r" d="M432 544 V136 H370"/><path class="flow" d="M432 544 V136 H370"/>
+
+            <!-- Floor labels -->
+            <text class="lvl" x="146" y="228" text-anchor="end"><tspan class="n">L5</tspan> Offices</text>
+            <text class="lvl" x="146" y="298" text-anchor="end"><tspan class="n">L4</tspan> Offices</text>
+            <text class="lvl" x="146" y="368" text-anchor="end"><tspan class="n">L3</tspan> Offices</text>
+            <text class="lvl" x="146" y="438" text-anchor="end"><tspan class="n">L2</tspan> Clinic</text>
+            <text class="lvl" x="146" y="508" text-anchor="end"><tspan class="n">L1</tspan> Food court</text>
+            <text class="lvl" x="146" y="578" text-anchor="end"><tspan class="n">G</tspan> Retail</text>
+
+            <!-- Readouts -->
+            <g>
+              <line class="leader" x1="462" y1="224" x2="480" y2="224"/>
+              <rect class="readout-pill" x="480" y="210" width="96" height="28" rx="14"/>
+              <circle class="readout-dot" cx="496" cy="224" r="4.5"/>
+              <text class="readout" x="508" y="229" data-base="22.0">22.0°C</text>
+            </g>
+            <g>
+              <line class="leader" x1="462" y1="294" x2="480" y2="294"/>
+              <rect class="readout-pill" x="480" y="280" width="96" height="28" rx="14"/>
+              <circle class="readout-dot" cx="496" cy="294" r="4.5"/>
+              <text class="readout" x="508" y="299" data-base="21.8">21.8°C</text>
+            </g>
+            <g>
+              <line class="leader" x1="462" y1="364" x2="480" y2="364"/>
+              <rect class="readout-pill" x="480" y="350" width="96" height="28" rx="14"/>
+              <circle class="readout-dot" cx="496" cy="364" r="4.5"/>
+              <text class="readout" x="508" y="369" data-base="22.1">22.1°C</text>
+            </g>
+            <g>
+              <line class="leader" x1="462" y1="434" x2="480" y2="434"/>
+              <rect class="readout-pill" x="480" y="420" width="96" height="28" rx="14"/>
+              <circle class="readout-dot" cx="496" cy="434" r="4.5"/>
+              <text class="readout" x="508" y="439" data-base="21.5">21.5°C</text>
+            </g>
+            <g>
+              <line class="leader" x1="462" y1="504" x2="480" y2="504"/>
+              <rect class="readout-pill" x="480" y="490" width="96" height="28" rx="14"/>
+              <circle class="readout-dot" cx="496" cy="504" r="4.5"/>
+              <text class="readout" x="508" y="509" data-base="22.3">22.3°C</text>
+            </g>
+            <g>
+              <line class="leader" x1="462" y1="574" x2="480" y2="574"/>
+              <rect class="readout-pill" x="480" y="560" width="96" height="28" rx="14"/>
+              <circle class="readout-dot" cx="496" cy="574" r="4.5"/>
+              <text class="readout" x="508" y="579" data-base="22.0">22.0°C</text>
+            </g>
+
+            <!-- Ground -->
+            <defs>
+              <marker id="air-head" viewBox="0 0 8 8" refX="5" refY="4" markerWidth="4.5" markerHeight="4.5" orient="auto"><path d="M0 0 L8 4 L0 8z" fill="#1463C7"/></marker>
+              <pattern id="hatch" width="10" height="10" patternUnits="userSpaceOnUse" patternTransform="rotate(45)">
+                <line x1="0" y1="0" x2="0" y2="10" stroke="#C8D1D3" stroke-width="2"/>
+              </pattern>
+            </defs>
+            <rect x="8" y="601" width="584" height="20" fill="url(#hatch)"/>
+            <line class="ground" x1="8" y1="600" x2="592" y2="600"/>
+          </svg>
+        </div>
+        <figcaption class="legend">
+          <span><i style="background:#1463C7"></i>Chilled water supply</span>
+          <span><i style="background:#8DB4DE"></i>Return</span>
+          <span><i class="dot" style="background:#1F7A4D"></i>Floor temperature</span>
+        </figcaption>
+      </figure>
+    </div>
+  </section>
+
+
+  <!-- ============ ON SITE PHOTOS ============ -->
+  <section class="onsite" aria-label="Our work on site">
+    <div class="wrap onsite-grid">
+      <figure class="shot shot-lg">
+        <img src="https://images.pexels.com/photos/8065903/pexels-photo-8065903.jpeg?auto=compress&amp;cs=tinysrgb&amp;w=900" srcset="https://images.pexels.com/photos/8065903/pexels-photo-8065903.jpeg?auto=compress&amp;cs=tinysrgb&amp;w=900 1x, https://images.pexels.com/photos/8065903/pexels-photo-8065903.jpeg?auto=compress&amp;cs=tinysrgb&amp;w=1800 2x" alt="Rooftop air conditioning units on a commercial building with the city skyline behind" decoding="async">
+        <figcaption>Rooftop plant, checked every month</figcaption>
+      </figure>
+      <figure class="shot">
+        <img src="https://images.pexels.com/photos/6471912/pexels-photo-6471912.jpeg?auto=compress&amp;cs=tinysrgb&amp;w=640" srcset="https://images.pexels.com/photos/6471912/pexels-photo-6471912.jpeg?auto=compress&amp;cs=tinysrgb&amp;w=640 1x, https://images.pexels.com/photos/6471912/pexels-photo-6471912.jpeg?auto=compress&amp;cs=tinysrgb&amp;w=1280 2x" alt="Technician reading a refrigerant manifold gauge during AC maintenance" decoding="async">
+        <figcaption>Refrigerant pressures logged on every visit</figcaption>
+      </figure>
+      <figure class="shot">
+        <img src="https://images.pexels.com/photos/8297856/pexels-photo-8297856.jpeg?auto=compress&amp;cs=tinysrgb&amp;w=640" srcset="https://images.pexels.com/photos/8297856/pexels-photo-8297856.jpeg?auto=compress&amp;cs=tinysrgb&amp;w=640 1x, https://images.pexels.com/photos/8297856/pexels-photo-8297856.jpeg?auto=compress&amp;cs=tinysrgb&amp;w=1280 2x" alt="Exposed air conditioning ductwork running across a commercial ceiling" decoding="async">
+        <figcaption>Ductwork and air handling kept clean</figcaption>
+      </figure>
+    </div>
+  </section>
+
+  <!-- ============ SERVICES / SCHEDULE ============ -->
+  <section class="section section-sheet" id="services">
+    <div class="wrap">
+      <div class="section-head">
+        <h2>Every system in the building, on one schedule</h2>
+        <p>Most commercial buildings run a mix of equipment from different years and brands. We service all of it under one contract, so your facility team deals with one company and one phone number.</p>
+      </div>
+
+      <table class="schedule">
+        <thead>
+          <tr><th scope="col">Equipment</th><th scope="col">What a visit covers</th><th scope="col">Typical visit</th></tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td><div class="eq"><img class="eq-img" src="https://images.pexels.com/photos/37913513/pexels-photo-37913513.jpeg?auto=compress&amp;cs=tinysrgb&amp;w=240" srcset="https://images.pexels.com/photos/37913513/pexels-photo-37913513.jpeg?auto=compress&amp;cs=tinysrgb&amp;w=240 1x, https://images.pexels.com/photos/37913513/pexels-photo-37913513.jpeg?auto=compress&amp;cs=tinysrgb&amp;w=480 2x" alt="Large outdoor cooling plant with pipework" loading="lazy" decoding="async"><div><span class="eq-name">Chillers</span><span class="eq-note">Air-cooled and water-cooled</span></div></div></td>
+            <td>Condenser coil cleaning, refrigerant pressure and superheat checks, compressor current, oil level and control panel inspection.</td>
+            <td><span class="freq">Monthly</span></td>
+          </tr>
+          <tr>
+            <td><div class="eq"><img class="eq-img" src="https://images.pexels.com/photos/32032996/pexels-photo-32032996.jpeg?auto=compress&amp;cs=tinysrgb&amp;w=240" srcset="https://images.pexels.com/photos/32032996/pexels-photo-32032996.jpeg?auto=compress&amp;cs=tinysrgb&amp;w=240 1x, https://images.pexels.com/photos/32032996/pexels-photo-32032996.jpeg?auto=compress&amp;cs=tinysrgb&amp;w=480 2x" alt="Metal air handling and ventilation equipment" loading="lazy" decoding="async"><div><span class="eq-name">Air handling units</span><span class="eq-note">AHU and FAHU</span></div></div></td>
+            <td>Filter change, belt and bearing check, coil and drain pan cleaning, damper and actuator test.</td>
+            <td><span class="freq">Monthly</span></td>
+          </tr>
+          <tr>
+            <td><div class="eq"><img class="eq-img" src="https://images.pexels.com/photos/32588555/pexels-photo-32588555.jpeg?auto=compress&amp;cs=tinysrgb&amp;w=240" srcset="https://images.pexels.com/photos/32588555/pexels-photo-32588555.jpeg?auto=compress&amp;cs=tinysrgb&amp;w=240 1x, https://images.pexels.com/photos/32588555/pexels-photo-32588555.jpeg?auto=compress&amp;cs=tinysrgb&amp;w=480 2x" alt="Technician servicing an indoor air conditioning unit" loading="lazy" decoding="async"><div><span class="eq-name">Fan coil units</span><span class="eq-note">Ceiling, ducted and cassette</span></div></div></td>
+            <td>Filter cleaning, drain line flushing, valve and thermostat check, fan motor inspection.</td>
+            <td><span class="freq">Quarterly</span></td>
+          </tr>
+          <tr>
+            <td><div class="eq"><img class="eq-img" src="https://images.pexels.com/photos/3964741/pexels-photo-3964741.jpeg?auto=compress&amp;cs=tinysrgb&amp;w=240" srcset="https://images.pexels.com/photos/3964741/pexels-photo-3964741.jpeg?auto=compress&amp;cs=tinysrgb&amp;w=240 1x, https://images.pexels.com/photos/3964741/pexels-photo-3964741.jpeg?auto=compress&amp;cs=tinysrgb&amp;w=480 2x" alt="Bank of outdoor condensing units on a steel frame" loading="lazy" decoding="async"><div><span class="eq-name">VRF and VRV systems</span><span class="eq-note">All indoor and outdoor units</span></div></div></td>
+            <td>Error log review, refrigerant leak testing, outdoor coil cleaning, indoor unit service and controller check.</td>
+            <td><span class="freq">Quarterly</span></td>
+          </tr>
+          <tr>
+            <td><div class="eq"><img class="eq-img" src="https://images.pexels.com/photos/30210086/pexels-photo-30210086.jpeg?auto=compress&amp;cs=tinysrgb&amp;w=240" srcset="https://images.pexels.com/photos/30210086/pexels-photo-30210086.jpeg?auto=compress&amp;cs=tinysrgb&amp;w=240 1x, https://images.pexels.com/photos/30210086/pexels-photo-30210086.jpeg?auto=compress&amp;cs=tinysrgb&amp;w=480 2x" alt="Packaged air conditioning unit on a flat roof" loading="lazy" decoding="async"><div><span class="eq-name">Package and ducted split units</span><span class="eq-note">Rooftop and plant room</span></div></div></td>
+            <td>Coil wash, gas pressure check, electrical terminals tightened, drain clearing, airflow test.</td>
+            <td><span class="freq">Quarterly</span></td>
+          </tr>
+          <tr>
+            <td><div class="eq"><img class="eq-img" src="https://images.pexels.com/photos/5711732/pexels-photo-5711732.jpeg?auto=compress&amp;cs=tinysrgb&amp;w=240" srcset="https://images.pexels.com/photos/5711732/pexels-photo-5711732.jpeg?auto=compress&amp;cs=tinysrgb&amp;w=240 1x, https://images.pexels.com/photos/5711732/pexels-photo-5711732.jpeg?auto=compress&amp;cs=tinysrgb&amp;w=480 2x" alt="Insulated chilled water pipes and valves" loading="lazy" decoding="async"><div><span class="eq-name">Pumps and chilled water piping</span><span class="eq-note">Primary and secondary circuits</span></div></div></td>
+            <td>Pump vibration and seal check, strainer cleaning, valve operation, insulation repair.</td>
+            <td><span class="freq">Quarterly</span></td>
+          </tr>
+          <tr>
+            <td><div class="eq"><img class="eq-img" src="https://images.pexels.com/photos/11538226/pexels-photo-11538226.jpeg?auto=compress&amp;cs=tinysrgb&amp;w=240" srcset="https://images.pexels.com/photos/11538226/pexels-photo-11538226.jpeg?auto=compress&amp;cs=tinysrgb&amp;w=240 1x, https://images.pexels.com/photos/11538226/pexels-photo-11538226.jpeg?auto=compress&amp;cs=tinysrgb&amp;w=480 2x" alt="Supply air duct in a commercial building" loading="lazy" decoding="async"><div><span class="eq-name">Ductwork and ventilation</span><span class="eq-note">Supply, return and extract</span></div></div></td>
+            <td>Duct cleaning, grille and diffuser cleaning, kitchen and toilet extract fans, fresh air balance.</td>
+            <td><span class="freq">Yearly</span></td>
+          </tr>
+        </tbody>
+      </table>
+
+      <p class="brands"><strong>We work on all major makes,</strong> including Carrier, Trane, York, Daikin, Mitsubishi Electric, LG, Samsung, Gree, Midea and Zamil.</p>
+    </div>
+  </section>
+
+  <!-- ============ REPORT ============ -->
+  <section class="section" id="reports">
+    <div class="wrap split">
+      <div class="split-copy">
+        <h2>Every visit ends with a written report</h2>
+        <p>Within 24 hours of each visit, your facility manager gets a report for every unit we touched: what we checked, the readings we took, photos, and anything that needs attention before it becomes a breakdown.</p>
+        <ul class="checks">
+          <li>Readings logged per unit, so a compressor drifting out of range is caught months early</li>
+          <li>Before and after photos of coils, filters and drain pans</li>
+          <li>Parts recommendations with prices. Nothing is replaced without your approval</li>
+          <li>A full service history for audits, insurers and building handovers</li>
+        </ul>
+      </div>
+
+      <article class="report" aria-label="Sample service report">
+        <div class="report-top">
+          <div>
+            <h3>Service report</h3>
+            <span class="ref">SR-2611-042</span>
+          </div>
+          <span class="sample-badge">Sample</span>
+        </div>
+        <div class="report-meta">
+          <div><span class="k">Site</span><div class="v">Office tower, Business Bay</div></div>
+          <div><span class="k">Unit</span><div class="v">AHU-03, Level 4</div></div>
+          <div><span class="k">Visit</span><div class="v">Monthly preventive</div></div>
+          <div><span class="k">Date</span><div class="v">12 Nov 2026</div></div>
+        </div>
+        <table class="readings">
+          <thead><tr><th scope="col">Check</th><th scope="col">Reading</th><th scope="col">Status</th></tr></thead>
+          <tbody>
+            <tr><td>Supply air temperature</td><td>13.8°C</td><td><span class="status ok">Normal</span></td></tr>
+            <tr><td>Return air temperature</td><td>23.6°C</td><td><span class="status ok">Normal</span></td></tr>
+            <tr><td>Filter pressure drop</td><td>210 Pa</td><td><span class="status warn">Replace next visit</span></td></tr>
+            <tr><td>Fan motor current</td><td>7.4 A of 8.2 A</td><td><span class="status ok">Normal</span></td></tr>
+            <tr><td>Belt tension and alignment</td><td>Adjusted</td><td><span class="status ok">Normal</span></td></tr>
+          </tbody>
+        </table>
+        <div class="report-notes">
+          <span class="k">Engineer's notes</span>
+          <p>Drain pan cleaned and treated. Filters loading faster than usual because of construction dust nearby. Recommend monthly filter changes until the works finish.</p>
+        </div>
+        <div class="photos">
+          <figure class="photo"><img src="https://images.pexels.com/photos/29452977/pexels-photo-29452977.jpeg?auto=compress&amp;cs=tinysrgb&amp;w=520" srcset="https://images.pexels.com/photos/29452977/pexels-photo-29452977.jpeg?auto=compress&amp;cs=tinysrgb&amp;w=520 1x, https://images.pexels.com/photos/29452977/pexels-photo-29452977.jpeg?auto=compress&amp;cs=tinysrgb&amp;w=1040 2x" alt="Condenser unit casing and coil after cleaning" loading="lazy" decoding="async"><figcaption>Condenser, after cleaning</figcaption></figure>
+          <figure class="photo"><img src="https://images.pexels.com/photos/5463582/pexels-photo-5463582.jpeg?auto=compress&amp;cs=tinysrgb&amp;w=520" srcset="https://images.pexels.com/photos/5463582/pexels-photo-5463582.jpeg?auto=compress&amp;cs=tinysrgb&amp;w=520 1x, https://images.pexels.com/photos/5463582/pexels-photo-5463582.jpeg?auto=compress&amp;cs=tinysrgb&amp;w=1040 2x" alt="Engineer working on an air conditioning unit with hand tools" loading="lazy" decoding="async"><figcaption>Electrical checks</figcaption></figure>
+        </div>
+      </article>
+    </div>
+  </section>
+
+  <!-- ============ CONTRACTS ============ -->
+  <section class="section section-sheet" id="contracts">
+    <div class="wrap">
+      <div class="section-head">
+        <h2>Annual maintenance contracts</h2>
+        <p>Choose the level of cover that suits your building. Every contract is priced after a free site survey, based on the equipment you actually have.</p>
+      </div>
+
+      <div class="plans">
+        <article class="plan">
+          <div class="plan-body">
+            <h3>Planned</h3>
+            <p class="fit">Scheduled preventive visits for buildings with an in-house team.</p>
+            <dl>
+              <div><dt>Visits</dt><dd>Quarterly</dd></div>
+              <div><dt>Breakdown response</dt><dd>Next working day</dd></div>
+              <div><dt>Spare parts</dt><dd>Quoted separately</dd></div>
+              <div><dt>Reports</dt><dd>After every visit</dd></div>
+            </dl>
+            <a class="btn btn-outline" href="#contact" data-plan="Planned">Get a Planned quote</a>
+          </div>
+        </article>
+
+        <article class="plan featured">
+          <div class="plan-body">
+            <span class="most">Most buildings choose this</span>
+            <h3>Priority</h3>
+            <p class="fit">Monthly visits and fast breakdown cover for busy, occupied buildings.</p>
+            <dl>
+              <div><dt>Visits</dt><dd>Monthly</dd></div>
+              <div><dt>Breakdown response</dt><dd>Within 4 hours</dd></div>
+              <div><dt>Spare parts</dt><dd>Discounted rates</dd></div>
+              <div><dt>Reports</dt><dd>Every visit, plus monthly summary</dd></div>
+            </dl>
+            <a class="btn btn-primary" href="#contact" data-plan="Priority">Get a Priority quote</a>
+          </div>
+        </article>
+
+        <article class="plan">
+          <div class="plan-body">
+            <h3>Comprehensive</h3>
+            <p class="fit">One fixed yearly cost, with parts and labour included.</p>
+            <dl>
+              <div><dt>Visits</dt><dd>Monthly</dd></div>
+              <div><dt>Breakdown response</dt><dd>Within 2 hours, 24/7</dd></div>
+              <div><dt>Spare parts</dt><dd>Included</dd></div>
+              <div><dt>Reports</dt><dd>Every visit, plus quarterly review</dd></div>
+            </dl>
+            <a class="btn btn-outline" href="#contact" data-plan="Comprehensive">Get a Comprehensive quote</a>
+          </div>
+        </article>
+      </div>
+      <p class="plan-note">Already have a contractor? We can take over mid-contract, starting with a full survey of your equipment.</p>
+    </div>
+  </section>
+
+  <!-- ============ BUILDINGS ============ -->
+  <section class="section" id="buildings">
+    <div class="wrap">
+      <div class="section-head">
+        <h2>Commercial buildings only</h2>
+        <p>We don't take on villas or apartments. Our engineers work in occupied commercial sites every day and plan each visit so tenants, shoppers, guests and patients aren't disturbed.</p>
+      </div>
+      <figure class="banner">
+        <img src="https://images.pexels.com/photos/19689942/pexels-photo-19689942.jpeg?auto=compress&amp;cs=tinysrgb&amp;w=1300" srcset="https://images.pexels.com/photos/19689942/pexels-photo-19689942.jpeg?auto=compress&amp;cs=tinysrgb&amp;w=1300 1x, https://images.pexels.com/photos/19689942/pexels-photo-19689942.jpeg?auto=compress&amp;cs=tinysrgb&amp;w=2600 2x" alt="Glass office towers in Dubai's business district" loading="lazy" decoding="async">
+      </figure>
+      <ul class="bldg-list">
+        <li>
+          <svg viewBox="0 0 40 40" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><rect x="9" y="4" width="22" height="32"/><path d="M14 10h4M22 10h4M14 16h4M22 16h4M14 22h4M22 22h4M17 36v-7h6v7"/></svg>
+          <div><h3>Office towers and business centres</h3><p>Work scheduled around tenants, with major servicing on weekends.</p></div>
+        </li>
+        <li>
+          <svg viewBox="0 0 40 40" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M4 16l4-9h24l4 9M4 16h32M6 16v20h28V16M15 36V24h10v12"/></svg>
+          <div><h3>Shopping malls and retail</h3><p>Night-shift servicing, so stores stay cool and open all day.</p></div>
+        </li>
+        <li>
+          <svg viewBox="0 0 40 40" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M5 36V14h30v22M5 22h30M13 14V8h14v6M10 28h6M24 28h6"/></svg>
+          <div><h3>Hotels and hotel apartments</h3><p>Quiet work on guest floors and same-day fixes for room units.</p></div>
+        </li>
+        <li>
+          <svg viewBox="0 0 40 40" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><rect x="6" y="8" width="28" height="28"/><path d="M20 14v12M14 20h12"/></svg>
+          <div><h3>Clinics and hospitals</h3><p>Filter and hygiene standards for clinical areas, with fully logged records.</p></div>
+        </li>
+        <li>
+          <svg viewBox="0 0 40 40" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M3 36V15l17-9 17 9v21M3 36h34M10 36V22h20v14M10 27h20M10 32h20"/></svg>
+          <div><h3>Warehouses and factories</h3><p>Large package and ducted units, with roof access handled safely.</p></div>
+        </li>
+        <li>
+          <svg viewBox="0 0 40 40" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M8 4v12a4 4 0 0 0 8 0V4M12 4v32M28 36V4c-4 2-6 7-6 13h6"/></svg>
+          <div><h3>Restaurants and food courts</h3><p>Kitchen extract and fresh air kept in balance with the cooling load.</p></div>
+        </li>
+        <li>
+          <svg viewBox="0 0 40 40" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M20 5L3 13l17 8 17-8-17-8ZM9 16v9c0 3 5 6 11 6s11-3 11-6v-9M37 13v10"/></svg>
+          <div><h3>Schools and universities</h3><p>Major servicing done in the holidays, ready for the first day of term.</p></div>
+        </li>
+        <li>
+          <svg viewBox="0 0 40 40" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M4 14L20 5l16 9M6 14h28M8 18v14M16 18v14M24 18v14M32 18v14M4 35h32"/></svg>
+          <div><h3>Showrooms and bank branches</h3><p>Customer-facing spaces kept comfortable through opening hours.</p></div>
+        </li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- ============ BREAKDOWNS ============ -->
+  <section class="section night" id="breakdowns">
+    <div class="wrap night-grid">
+      <div>
+        <h2>AC down in the middle of summer? We answer 24/7.</h2>
+        <p>Call or WhatsApp the breakdown line at any hour. Tell us the building and the unit, and an engineer is sent with the common parts already in the van.</p>
+        <a class="big-phone" href="tel:+971547720298">+971 54 772 0298</a>
+        <div class="cta-row">
+          <a class="btn btn-tag" href="tel:+971547720298">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M6.6 10.8a15.1 15.1 0 0 0 6.6 6.6l2.2-2.2c.3-.3.7-.4 1-.2 1.1.4 2.3.6 3.6.6.6 0 1 .4 1 1V20c0 .6-.4 1-1 1A17 17 0 0 1 3 4c0-.6.4-1 1-1h3.5c.6 0 1 .4 1 1 0 1.2.2 2.4.6 3.6.1.3 0 .7-.2 1l-2.3 2.2Z"/></svg>
+            Call the breakdown line
+          </a>
+          <a class="btn btn-light" href="https://wa.me/971547720298?text=URGENT%20breakdown%3A%20" target="_blank" rel="noopener">WhatsApp a breakdown</a>
+        </div>
+      </div>
+      <div>
+        <figure class="night-photo">
+          <img src="https://images.pexels.com/photos/6471911/pexels-photo-6471911.jpeg?auto=compress&amp;cs=tinysrgb&amp;w=760" srcset="https://images.pexels.com/photos/6471911/pexels-photo-6471911.jpeg?auto=compress&amp;cs=tinysrgb&amp;w=760 1x, https://images.pexels.com/photos/6471911/pexels-photo-6471911.jpeg?auto=compress&amp;cs=tinysrgb&amp;w=1520 2x" alt="Technician checking an outdoor air conditioning unit with gauges and tools" loading="lazy" decoding="async">
+        </figure>
+        <p class="faults-title">Faults we fix every week</p>
+        <ul class="faults">
+          <li>Units not cooling or blowing warm air</li>
+          <li>Water leaking from ceiling units</li>
+          <li>Units tripping the breaker</li>
+          <li>Compressor failing to start</li>
+          <li>Refrigerant gas leaks</li>
+          <li>Noisy or vibrating fans</li>
+          <li>Error codes on VRF systems</li>
+          <li>Chiller alarms and shutdowns</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ PROCESS ============ -->
+  <section class="section" id="process">
+    <div class="wrap">
+      <div class="section-head">
+        <h2>How a contract starts</h2>
+        <p>From first call to first visit usually takes about a week.</p>
+      </div>
+      <ol class="steps">
+        <li>
+          <h3>Free site survey</h3>
+          <p>An engineer walks the plant room, roof and floors, and records the condition of every unit.</p>
+        </li>
+        <li>
+          <h3>Equipment register</h3>
+          <p>Each unit gets a tag and an ID, so every visit, reading and repair is tracked against it.</p>
+        </li>
+        <li>
+          <h3>Scope and fixed price</h3>
+          <p>You receive a written scope, visit calendar and price. Nothing starts until you approve it.</p>
+        </li>
+        <li>
+          <h3>Visits begin</h3>
+          <p>Scheduled maintenance, a report after each visit, and the 24/7 line active from day one.</p>
+        </li>
+      </ol>
+    </div>
+  </section>
+
+  <!-- ============ FAQ ============ -->
+  <section class="section section-sheet" id="faq">
+    <div class="wrap faq-wrap">
+      <div class="section-head">
+        <h2>Questions facility managers ask us</h2>
+        <p>Something else on your mind? Call or WhatsApp and speak to an engineer directly.</p>
+      </div>
+      <div class="faq">
+        <details>
+          <summary>Do you service homes or villas?</summary>
+          <div class="answer"><p>No. We only work on commercial buildings, so our team, tools and spare parts are set up for central plant, large ducted systems and multi-floor sites.</p></div>
+        </details>
+        <details>
+          <summary>Can you take over from our current maintenance contractor?</summary>
+          <div class="answer"><p>Yes. We start with a full survey and build an equipment register, so nothing is missed in the handover. We can begin mid-contract or when your current contract ends.</p></div>
+        </details>
+        <details>
+          <summary>Can you work at night or on weekends?</summary>
+          <div class="answer"><p>Yes. For malls, offices and hotels we regularly schedule work outside trading or office hours so occupants aren't disturbed.</p></div>
+        </details>
+        <details>
+          <summary>How is a maintenance contract priced?</summary>
+          <div class="answer"><p>By the number and type of units, how often they're visited, and the level of breakdown and parts cover you choose. The site survey is free and you get a fixed yearly price.</p></div>
+        </details>
+        <details>
+          <summary>Which brands and systems do you work on?</summary>
+          <div class="answer"><p>All major makes, including Carrier, Trane, York, Daikin, Mitsubishi Electric, LG, Samsung, Gree, Midea and Zamil, across chillers, AHUs, FCUs, VRF, package and ducted split units.</p></div>
+        </details>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ CONTACT ============ -->
+  <section class="section contact" id="contact">
+    <div class="wrap contact-grid">
+      <div class="contact-copy">
+        <h2>Book a free site survey</h2>
+        <p>Tell us about the building and we'll arrange a visit. Sending the form opens WhatsApp with your details filled in, ready to send.</p>
+        <ul class="direct">
+          <li><span class="k">Phone</span><a href="tel:+971547720298">+971 54 772 0298</a></li>
+          <li><span class="k">WhatsApp</span><a href="https://wa.me/971547720298" target="_blank" rel="noopener">Message us</a></li>
+          <li><span class="k">Office hours</span><span>Monday to Saturday, 8 am to 6 pm</span></li>
+          <li><span class="k">Breakdowns</span><span>24 hours, 7 days</span></li>
+          <li><span class="k">Areas</span><span>Dubai, Sharjah, Ajman and Abu Dhabi</span></li>
+        </ul>
+      </div>
+
+      <form class="form" id="survey-form" novalidate>
+        <div class="form-grid">
+          <div class="field">
+            <label for="f-name">Your name</label>
+            <input class="input" id="f-name" name="name" autocomplete="name" required>
+          </div>
+          <div class="field">
+            <label for="f-company">Company <span class="opt">(optional)</span></label>
+            <input class="input" id="f-company" name="company" autocomplete="organization">
+          </div>
+          <div class="field">
+            <label for="f-phone">Phone or WhatsApp</label>
+            <input class="input" id="f-phone" name="phone" type="tel" autocomplete="tel" placeholder="+971" required>
+          </div>
+          <div class="field">
+            <label for="f-building">Building type</label>
+            <select class="select" id="f-building" name="building" required>
+              <option value="">Choose one</option>
+              <option>Office tower or business centre</option>
+              <option>Mall or retail</option>
+              <option>Hotel or hotel apartments</option>
+              <option>Clinic or hospital</option>
+              <option>Warehouse or factory</option>
+              <option>Restaurant or food court</option>
+              <option>School or university</option>
+              <option>Other commercial</option>
+            </select>
+          </div>
+          <div class="field">
+            <label for="f-location">Emirate</label>
+            <select class="select" id="f-location" name="location" required>
+              <option value="">Choose one</option>
+              <option>Dubai</option>
+              <option>Sharjah</option>
+              <option>Ajman</option>
+              <option>Abu Dhabi</option>
+              <option>Other</option>
+            </select>
+          </div>
+          <div class="field">
+            <label for="f-units">Number of AC units, roughly</label>
+            <select class="select" id="f-units" name="units">
+              <option>Not sure</option>
+              <option>Under 20</option>
+              <option>20 to 50</option>
+              <option>50 to 150</option>
+              <option>More than 150</option>
+            </select>
+          </div>
+          <fieldset class="field full">
+            <legend>What do you need?</legend>
+            <div class="choices">
+              <label class="choice"><input type="radio" name="need" value="Maintenance contract" checked><span>Maintenance contract</span></label>
+              <label class="choice"><input type="radio" name="need" value="Breakdown repair"><span>Breakdown repair</span></label>
+              <label class="choice"><input type="radio" name="need" value="One-off service or cleaning"><span>One-off service</span></label>
+            </div>
+          </fieldset>
+          <div class="field full">
+            <label for="f-message">Anything we should know? <span class="opt">(optional)</span></label>
+            <textarea class="textarea" id="f-message" name="message" placeholder="For example: 3 rooftop package units, one tripping in the afternoon"></textarea>
+          </div>
+        </div>
+        <div class="form-foot">
+          <button class="btn btn-primary" type="submit">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2Zm0 18.2a8.2 8.2 0 0 1-4.2-1.1l-.3-.2-3 .8.8-2.9-.2-.3A8.2 8.2 0 1 1 12 20.2Z"/></svg>
+            Send on WhatsApp
+          </button>
+          <small>We reply within one working hour. Breakdowns get a call back straight away.</small>
+        </div>
+        <p class="form-status" id="form-status" role="status" aria-live="polite"></p>
+      </form>
+    </div>
+  </section>
+
+</main>
+
+<footer class="site-footer">
+  <div class="wrap">
+    <div class="footer-grid">
+      <div>
+        <a href="#top" class="brand" aria-label="Awais HVAC, back to top">
+          <svg class="brand-mark" viewBox="0 0 36 36" aria-hidden="true">
+            <rect width="36" height="36" rx="5" fill="#F3C33B"/>
+            <path d="M18 18C16.5 12.5 17.5 7 21.5 7.2c3.3.2 3.4 4.6-.4 8.3L18 18Z" fill="#0F2330" transform="rotate(0 18 18)"/><path d="M18 18C16.5 12.5 17.5 7 21.5 7.2c3.3.2 3.4 4.6-.4 8.3L18 18Z" fill="#0F2330" transform="rotate(120 18 18)"/><path d="M18 18C16.5 12.5 17.5 7 21.5 7.2c3.3.2 3.4 4.6-.4 8.3L18 18Z" fill="#0F2330" transform="rotate(240 18 18)"/><circle cx="18" cy="18" r="2.6" fill="#F3C33B" stroke="#0F2330" stroke-width="1.6"/>
+          </svg>
+          <span class="brand-text">
+            <span class="brand-name">Awais HVAC</span>
+            <span class="brand-sub">Commercial AC maintenance</span>
+          </span>
+        </a>
+        <p class="footer-about">Planned maintenance and 24/7 breakdown repair for air conditioning in commercial buildings across the UAE.</p>
+      </div>
+      <div>
+        <h3>On this page</h3>
+        <ul>
+          <li><a href="#services">Services</a></li>
+          <li><a href="#contracts">Maintenance contracts</a></li>
+          <li><a href="#buildings">Buildings we look after</a></li>
+          <li><a href="#breakdowns">Breakdowns</a></li>
+          <li><a href="#faq">FAQ</a></li>
+        </ul>
+      </div>
+      <div>
+        <h3>Contact</h3>
+        <ul>
+          <li><a href="tel:+971547720298">+971 54 772 0298</a></li>
+          <li><a href="https://wa.me/971547720298" target="_blank" rel="noopener">WhatsApp</a></li>
+          <li>Monday to Saturday, 8 am to 6 pm</li>
+          <li>Breakdown line 24/7</li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>© 2026 Awais HVAC. All rights reserved.</span>
+      <span>Dubai, United Arab Emirates. Mockup photos from Pexels.</span>
+    </div>
+  </div>
+</footer>
+
+<div class="call-bar" aria-label="Quick contact">
+  <a class="btn btn-tag" href="tel:+971547720298">Call now</a>
+  <a class="btn btn-light" href="https://wa.me/971547720298" target="_blank" rel="noopener">WhatsApp</a>
+</div>
+
+<script>
+  // Hide broken photos gracefully (grey placeholder stays)
+  document.querySelectorAll('img').forEach(function (img) {
+    function miss() { img.classList.add('is-missing'); }
+    if (img.complete && img.naturalWidth === 0 && img.src) miss();
+    img.addEventListener('error', miss);
+  });
+
+  // Mobile menu
+  (function () {
+    var btn = document.querySelector('.menu-btn');
+    var nav = document.getElementById('main-nav');
+    if (!btn || !nav) return;
+    btn.addEventListener('click', function () {
+      var open = nav.classList.toggle('open');
+      btn.setAttribute('aria-expanded', open ? 'true' : 'false');
+      btn.textContent = open ? 'Close' : 'Menu';
+    });
+    nav.addEventListener('click', function (e) {
+      if (e.target.tagName === 'A') {
+        nav.classList.remove('open');
+        btn.setAttribute('aria-expanded', 'false');
+        btn.textContent = 'Menu';
+      }
+    });
+  })();
+
+  // Live-looking floor temperatures in the hero drawing
+  (function () {
+    var reduce = window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+    if (reduce) return;
+    var readouts = Array.prototype.slice.call(document.querySelectorAll('.readout'));
+    if (!readouts.length) return;
+    setInterval(function () {
+      var el = readouts[Math.floor(Math.random() * readouts.length)];
+      var base = parseFloat(el.getAttribute('data-base'));
+      var v = Math.min(22.4, Math.max(21.5, base + (Math.random() - 0.5) * 0.4));
+      el.setAttribute('data-base', v.toFixed(1));
+      el.textContent = v.toFixed(1) + '°C';
+      el.classList.remove('tick'); void el.getBBox(); el.classList.add('tick');
+    }, 1800);
+  })();
+
+  // Plan buttons preselect the contract in the form
+  (function () {
+    var msg = document.getElementById('f-message');
+    document.querySelectorAll('[data-plan]').forEach(function (a) {
+      a.addEventListener('click', function () {
+        var contract = document.querySelector('input[name="need"][value="Maintenance contract"]');
+        if (contract) contract.checked = true;
+        if (msg && !msg.value) msg.value = 'Interested in the ' + a.getAttribute('data-plan') + ' maintenance contract.';
+      });
+    });
+  })();
+
+  // Survey form opens WhatsApp with the details
+  (function () {
+    var form = document.getElementById('survey-form');
+    var status = document.getElementById('form-status');
+    if (!form) return;
+    form.addEventListener('submit', function (e) {
+      e.preventDefault();
+      status.style.color = '';
+      var missing = Array.prototype.filter.call(form.querySelectorAll('[required]'), function (f) { return !f.value.trim(); });
+      if (missing.length) {
+        var label = form.querySelector('label[for="' + missing[0].id + '"]');
+        status.style.color = '#A8361A';
+        status.textContent = 'Add ' + (label ? label.firstChild.textContent.trim().toLowerCase() : 'the missing details') + ' to continue.';
+        missing[0].focus();
+        return;
+      }
+      var d = new FormData(form);
+      var lines = [
+        'Hello Awais HVAC, I would like to book a site survey.',
+        'Name: ' + d.get('name'),
+        d.get('company') ? 'Company: ' + d.get('company') : '',
+        'Phone: ' + d.get('phone'),
+        'Building: ' + d.get('building'),
+        'Emirate: ' + d.get('location'),
+        'AC units: ' + d.get('units'),
+        'Need: ' + d.get('need'),
+        d.get('message') ? 'Details: ' + d.get('message') : ''
+      ].filter(Boolean).join('\n');
+      window.open('https://wa.me/971547720298?text=' + encodeURIComponent(lines), '_blank', 'noopener');
+      status.textContent = 'WhatsApp opened in a new tab with your details. Press send there to reach us.';
+    });
+  })();
+</script>
+</body>
+</html>
